@@ -9,5 +9,13 @@ $(document).on('ready', function() {
       '&nbsp;<button class="btn btn-danger btn-sm">X</button></h2></li>');
   });
 
+  $('ul').on('click', 'button', function() {
+
+    console.log($(this).parent().parent());
+    $(this).parent().parent().remove();
+
+
+
+  });
 
 });
